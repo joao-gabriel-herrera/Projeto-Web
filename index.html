@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="centralizar">
+      <nav aria-label="Menu principal">
+        <h1 class="logo">Meu Portfólio</h1>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        <div
+          class="botoes-acessibilidade"
+          role="group"
+          aria-label="Ferramentas de acessibilidade"
+        >
+          <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">
+            A+
+          </button>
+          <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">
+            A-
+          </button>
+          <button
+            id="altoContraste"
+            aria-label="Ativar ou desativar alto contraste"
+          >
+            Alto Contraste ⚫
+          </button>
+          <button id="modoEscuro" aria-label="Alternar modo escuro">
+            Modo Escuro 🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="centralizar mt">
+      <section class="hero">
+        <img
+          src="imagens/banner-home.webp"
+          alt="Banner de boas-vindas ao portfólio de João Herrera"
+        />
+        <div class="hero-texto">
+          <h2>Olá, eu sou João Herrera</h2>
+          <p>
+            Desenvolvedor Front-End apaixonado por criar experiências digitais
+            incríveis.
+          </p>
+          <a href="projetos.html" class="botao">Ver Projetos</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="centralizarf">
+      <p>&copy; 2025 João Herrera - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

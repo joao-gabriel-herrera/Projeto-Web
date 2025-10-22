@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos - Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="centralizar">
+      <nav aria-label="Menu principal">
+        <h1 class="logo">Meu Portfólio</h1>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        <div
+          class="botoes-acessibilidade"
+          role="group"
+          aria-label="Ferramentas de acessibilidade"
+        >
+          <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">
+            A+
+          </button>
+          <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">
+            A-
+          </button>
+          <button
+            id="altoContraste"
+            aria-label="Ativar ou desativar alto contraste"
+          >
+            Alto Contraste ⚫
+          </button>
+          <button id="modoEscuro" aria-label="Alternar modo escuro">
+            Modo Escuro 🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="centralizar">
+      <section class="projetos" aria-labelledby="titulo-projetos">
+        <h2 id="titulo-projetos">Meus Projetos</h2>
+        <div class="galeria">
+          <article class="projeto">
+            <img
+              src="imagens/projeto1.webp"
+              alt="Página responsiva sobre um Headphone com informações e características do produto"
+            />
+            <h3>Página responsiva sobre Headphone</h3>
+          </article>
+
+          <article class="projeto">
+            <img
+              src="imagens/projeto2.webp"
+              alt="Página com formulário acessível de convite para Webinar, com boa legibilidade e contraste"
+            />
+            <h3>Página com recursos de acessibilidade</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="centralizarf">
+      <p>&copy; 2025 João Herrera - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
