@@ -10,11 +10,14 @@
     <header class="centralizar">
       <nav aria-label="Menu principal">
         <h1 class="logo">Meu Portfólio</h1>
-        <ul class="menu">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="contato.html">Contato</a></li>
+        <button class="hamburger" id="btnHamburger" aria-label="Abrir menu">
+          ☰
+        </button>
+        <ul class="menu" id="menu">
+          <li><a href="index.html" tabindex="5">Início</a></li>
+          <li><a href="sobre.html" tabindex="6">Sobre</a></li>
+          <li><a href="projetos.html" tabindex="7">Projetos</a></li>
+          <li><a href="contato.html" tabindex="8">Contato</a></li>
         </ul>
 
         <div
@@ -22,19 +25,32 @@
           role="group"
           aria-label="Ferramentas de acessibilidade"
         >
-          <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">
+          <button
+            id="aumentarFonte"
+            aria-label="Aumentar tamanho da fonte"
+            tabindex="1"
+          >
             A+
           </button>
-          <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">
+          <button
+            id="diminuirFonte"
+            aria-label="Diminuir tamanho da fonte"
+            tabindex="2"
+          >
             A-
           </button>
           <button
             id="altoContraste"
             aria-label="Ativar ou desativar alto contraste"
+            tabindex="3"
           >
             Alto Contraste ⚫
           </button>
-          <button id="modoEscuro" aria-label="Alternar modo escuro">
+          <button
+            id="modoEscuro"
+            aria-label="Alternar modo escuro"
+            tabindex="4"
+          >
             Modo Escuro 🌙
           </button>
         </div>

@@ -130,14 +130,18 @@ body.alto-contraste header,
 body.alto-contraste footer {
   background-color: #000 !important;
 }
+
+body.alto-contraste img {
+  filter: grayscale(1);
+}
 body.alto-contraste .projeto {
   background-color: #000 !important;
   border: 2px solid #fff;
 }
 body.alto-contraste a,
 body.alto-contraste button {
-  background-color: #fff !important;
-  color: #000 !important;
+  background-color: #333 !important;
+  color: yellow !important;
   font-weight: bold;
 }
 
@@ -170,7 +174,6 @@ body.alto-contraste button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ======= Correção geral de layout ======= */
 html,
 body {
   height: 100%;
@@ -187,7 +190,6 @@ main {
   box-sizing: border-box;
 }
 
-/* ======= Seção SOBRE ======= */
 .sobre {
   max-width: 700px;
   text-align: center;
@@ -206,7 +208,6 @@ body.alto-contraste .sobre {
   border: 2px solid #fff;
 }
 
-/* ======= Imagem da seção SOBRE ======= */
 .sobre img {
   width: 180px;
   height: 180px;
@@ -217,7 +218,6 @@ body.alto-contraste .sobre {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ======= Seção CONTATO ======= */
 .contato {
   width: 100%;
   max-width: 500px;
@@ -287,4 +287,61 @@ footer {
   padding: 10px;
   background-color: #111;
   color: #fff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav {
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 10px 20px;
+  }
 }
